@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Agora Assignment 2</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+
+    <body>
+        <input type="text" id="first" />
+        <input type="text" id="second" />
+        <button class="operator" onclick="add()">Add</button>
+        <button class="operator" onclick="subtract()">Subtract</button>
+        <button class="operator" onclick="multiply()">Multiply</button>
+        <button class="operator" onclick="divide()">Divide</button>
+        <input type="number" id="answer" />
+
+        <script>
+            function add() {
+                let a = parseFloat(document.getElementById("first").value)
+                let b = parseFloat(document.getElementById("second").value)
+                console.log(a)
+                console.log(b)
+                document.getElementById("answer").value = a+b
+            }
+        
+            function subtract() {
+                let a = parseFloat(document.getElementById("first").value)
+                let b = parseFloat(document.getElementById("second").value)
+                console.log(a)
+                console.log(b)
+                document.getElementById("answer").value = a-b
+            }
+        
+            function multiply() {
+                let a = parseFloat(document.getElementById("first").value)
+                let b = parseFloat(document.getElementById("second").value)
+                console.log(a)
+                console.log(b)
+                document.getElementById("answer").value = a*b
+            }
+        
+            function divide() {
+                let a = parseFloat(document.getElementById("first").value)
+                let b = parseFloat(document.getElementById("second").value)
+                console.log(a)
+                console.log(b)
+                document.getElementById("answer").value = a/b
+            }
+        </script>
+    </body>
+</html>
+
